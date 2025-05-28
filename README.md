@@ -96,10 +96,3 @@ This is a simple Snake game implemented using an Arduino Uno, a 20x4 character L
 ## 📜 License
 
 This project is open-source and available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-## 🙌 Credits
-
-Developed by [Your Name Here]  
-Inspired by classic retro Snake games
