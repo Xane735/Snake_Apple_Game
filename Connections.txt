@@ -1,0 +1,45 @@
+LCD        | Arduino
+-----------|---------
+RS   (Pin4)| D7
+E    (Pin6)| D8
+D4   (Pin11)| D9
+D5   (Pin12)| D10
+D6   (Pin13)| D11
+D7   (Pin14)| D12
+RW   (Pin5)| GND
+VO   (Pin3)| Center of 10k Pot
+VSS  (Pin1)| GND
+VDD  (Pin2)| 5V
+A    (Pin15)| 5V (via 220Ω)
+K    (Pin16)| GND
+
+Joystick
+VRx       | A0
+VRy       | A1
+SW        | D5 (optional)
+VCC       | 5V
+GND       | GND
+
+Buttons
+Select    | D2
+Clear     | D3
+Start     | D4
+GND (common for all buttons)
+
+| **LCD Pin** | **Label** | **Connect To**                      | **Details**                  |
+| ----------- | --------- | ----------------------------------- | ---------------------------- |
+| 1           | VSS       | GND                                 | Ground                       |
+| 2           | VDD       | 5V                                  | Power                        |
+| 3           | VO        | Middle pin of **10k pot**           | Contrast control             |
+|             |           | One side of pot to GND, other to 5V |                              |
+| 4           | RS        | Arduino **Pin 7**                   | Register select              |
+| 5           | RW        | GND                                 | Set to write mode            |
+| 6           | E         | Arduino **Pin 8**                   | Enable pin                   |
+| 7–10        | D0–D3     | *Not connected*                     | Not used in 4-bit mode       |
+| 11          | D4        | Arduino **Pin 9**                   | Data                         |
+| 12          | D5        | Arduino **Pin 10**                  | Data                         |
+| 13          | D6        | Arduino **Pin 11**                  | Data                         |
+| 14          | D7        | Arduino **Pin 12**                  | Data                         |
+| 15          | A (LED+)  | **220Ω resistor → 5V**              | Backlight power via resistor |
+| 16          | K (LED−)  | GND                                 | Backlight ground             |
+
